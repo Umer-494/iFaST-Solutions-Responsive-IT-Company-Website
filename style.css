@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.container-fluid {
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: white;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white !important;
+  z-index: 1030;
+  /* stays on top of other elements */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* optional subtle shadow */
+}
+
+.navbar-toggler {
+  padding: 3px;
+  /* smaller size */
+  border: 1px solid black !important;
+  /* black border */
+  border-radius: 5px;
+  /* optional: thoda rounded look */
+}
+
+.navbar-toggler-icon {
+  font-size: 20px;
+  width: 30px !important;
+  /* default is 30px */
+  height: 30px !important;
+  /* default is also 30px */
+  background-size: 20px 20px !important;
+  /* icon image size */
+}
+
+
+.nav-link {
+  position: relative;
+  color: #1C0D5A !important;
+  /* Default text color */
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00b2ab;
+  /* Bootstrap primary blue or any color you like */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00b2ab !important;
+  /* Change color on hover */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  /* Underline expands on hover */
+}
+
+/* Offcanvas background */
+.offcanvas {
+  background-color: #00b2ab !important;
+  /* Set teal color */
+}
+
+/* Navbar links inside offcanvas */
+.offcanvas .nav-link {
+  color: white !important;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s;
+}
+
+/* Hover effect */
+.offcanvas .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.offcanvas {
+  height: 100vh;
+}
+
+.offcanvas-header .btn-close {
+  filter: brightness(0) invert(1);
+  /* Makes icon pure white */
+  font-size: 0.75rem;
+  /* Adjust size as needed */
+  opacity: 1;
+  /* Make sure it's fully visible */
+}
+
+/* HomePage Styling */
+#home {
+  color: white;
+  /* text color for contrast */
+}
+
+.toptext {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1rem;
+  font-weight: 480;
+}
+
+.btn-custom {
+  background-color: #00b2ab;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #6d9291 !important;
+  /* darker shade on hover */
+  color: white;
+}
+
+/* Accordion Styling */
+:root {
+  --primary: #eff7fb;
+  --secondary: #ff5252;
+  --background: #eff7fb;
+  --highlight: #ffda79;
+  /* Theme color */
+  --theme: var(--primary);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Core styles/functionality */
+.tab {
+  position: relative;
+}
+
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+
+.tab input:checked~.tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: var(--theme);
+  border: 2px solid;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.tab__label,
+.tab__close {
+  display: flex;
+  color: #1C0D5A;
+  background: var(--theme);
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.tab__label {
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.tab__label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+}
+
+.tab input:checked+.tab__label::after {
+  transform: rotate(270deg);
+}
+
+.tab__content p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.tab__close {
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+.accordion--radio {
+  --theme: var(--secondary);
+}
+
+/* Arrow animation */
+.tab input:not(:checked)+.tab__label:hover::after {
+  animation: bounce .5s infinite;
+}
+
+@keyframes bounce {
+  25% {
+    transform: rotate(90deg) translate(.25rem);
+  }
+
+  75% {
+    transform: rotate(90deg) translate(-.25rem);
+  }
+}
+
+.about-btn {
+  font-weight: 500;
+  font-size: 0.85rem;
+  border: none;
+  background-color: #00b2ab;
+  color: white;
+  border-radius: 5px;
+  height: 48px;
+  width: 160px;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #6d9291 !important;
+  color: white;
+}
+
+
+/* carousel styling */
+
+
+.logo-carousel .slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+/* Optional: prevent shifting if logos vary in height */
+.logo-carousel .slick-slide>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* 2nd carousel styling */
+.logo-carousel-second img {
+  width: 160px;
+  height: 70;
+  margin: 10px;
+  object-fit: contain;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}
+
+.logo-carousel-second {
+  display: flex;
+  align-items: center;
+}
+
+.logo18 {
+  position: relative;
+  bottom: 30px;
+}
+
+/* services 4th slide styling(Bulb Image)*/
+.umer {
+  position: relative;
+  left: 70px;
+}
+
+@media (max-width: 991.98px) {
+  .umer {
+    left: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.bulb {
+  position: relative;
+  bottom: 70px;
+  height: 280px;
+}
+
+@media (max-width: 767px) {
+  .services-text {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+}
+
+/* Contact Us Page Styling */
+@media (max-width: 768px) {
+  #contact .row > div {
+    text-align: center !important;
+  }
+}
+
+/* Footer Styling */
+
+@media (max-width: 768px) {
+  footer .row > div {
+    text-align: center !important;
+  }
+
+  footer nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+.footer-up-line{
+  position: relative;
+  left: 40px;
+}
+
+.footer-up-line i{
+  position: relative;
+  left: 180px;
+}
+.footer{
+  font-size: 0.90rem;
+}
+@media (max-width: 991px) {
+  .footer-up-line {
+    position: static; /* Removes left offset */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .footer-up-line i {
+    position: static; /* Removes icon offset */
+    display: inline-block;
+    margin: 0 10px; /* Space between icons */
+  }
+
+  .footer {
+    text-align: center;
+  }
+}

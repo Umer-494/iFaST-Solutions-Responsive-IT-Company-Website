@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS FILE/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <link rel="stylesheet" , href="style.css">
+  <title>iFast Solutions</title>
+  <link rel="shortcut icon" href="fevicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ===== NAVBAR START ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Logo" height="50">
+      </a>
+
+      <button class="navbar-toggler border border-2" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Large screens -->
+      <div class="collapse navbar-collapse d-none d-lg-block">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile view Offcanvas -->
+      <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <!-- ===== NAVBAR END ===== -->
+
+  <!-- ===== HOME SECTION START ===== -->
+  <section id="home" class="py-5 d-flex align-items-center" style="background-color: #0074AF;">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start justify-content-center">
+        <!-- Left Text Content -->
+        <div class="toptext col-md-6 order-1 order-md-1">
+          <p class="text-white">IFAST SOLUTIONS</p>
+          <h1 class="display-5 fw-bold text-white">
+            Driving Innovation and Facilitation through Technology</h1>
+          <p class="lead text-light">
+            iFaST Solutions has established itself as a leading IT services company that is trusted by clients
+            worldwide..
+          </p>
+          <a href="#services" class="btn btn-custom mt-3 fw-bold" style="background-color:#00b2ab; color: white;">OUR
+            SERVICES</a>
+        </div>
+
+        <!-- Right Image Content -->
+        <div class="col-md-6 order-2 order-md-2 mt-4 mt-md-0 text-center">
+          <img src="home.png" alt="Hero Image" class="img-fluid" style="max-height: 400px;">
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="py-5"></div>
+  <!-- ===== HOME SECTION END ===== -->
+
+  <!-- ===== ABOUT US SECTION START ===== -->
+  <section id="about" class="bg-light">
+    <div class="container-fluid p-5 px-0">
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold" style="color: #1C0D5A;">About Us</h2>
+        <p class="text-muted ">iFaST Solutions is a privately owned IT services company based in Peshawar, Pakistan,
+          withsub-offices globally. <br>
+          Established in 1999, the company strives for excellence in the field, offering complete IT solutions toclients
+          in various sectors. <br>
+          iFaST Solutions offers consulting services and technology solutions to both government and private
+          sectors,including specialized <br>
+          capabilities in system analysis and design, software application development,
+          cross-platform integration, contract programming, <br>
+          documentation services, technical system design,customization, security solutions, IT consultancy, and
+          training.</p>
+      </div>
+
+      <!-- Stats Row -->
+      <div class="row text-center mb-5 px-5 mx-5">
+        <div class="col-12 col-md-3 mb-4">
+          <h1 class="fw-bold" style="color: #00b2ab;">150+</h1>
+          <p class="text-muted mb-0">Completed Projects</p>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <h1 class="fw-bold" style="color: #00b2ab;">250+</h1>
+          <p class="text-muted mb-0">Happy Customers</p>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <h1 class="fw-bold" style="color: #00b2ab;">120</h1>
+          <p class="text-muted mb-0">Awards</p>
+        </div>
+        <div class="col-12 col-md-3 mb-4">
+          <h1 class="fw-bold" style="color: #00b2ab;">24</h1>
+          <p class="text-muted mb-0">Years Of Active</p>
+        </div>
+      </div>
+  </section>
+
+  <div class="container-fluid py-5 px-3">
+    <div class="row">
+      <!-- Left Column: Text and Accordion -->
+      <div class="col-md-7 p-5 d-flex-column justify-content-center" style="background-color: #eff7fb;">
+        <h3 class="ps-5" style="color: #1C0D5A;">
+          iFaST Solutions has established itself as a leading IT services company that is
+          trusted <br>by clients worldwide.
+        </h3>
+        <br>
+        <div class="accordion accordion-flush ps-4" id="accordionFlushExample">
+          <div class="accordion-item" style="background-color: #EFF7FB; color: rgb(54, 54, 54);">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"
+                style="background-color: #EFF7FB;">
+                Excellence
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                We strive for excellence in everything we do and are dedicated to <br>delivering the highest quality IT
+                solutions and services to our clients
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: #EFF7FB; color: rgb(54, 54, 54);">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                style="background-color: #EFF7FB;">
+                Innovation
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                We continuously seek to innovate and stay ahead of the curve by <br> keeping up-to-date with the latest
+                trends and emerging technologies in <br> the IT industry.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: #EFF7FB; color: rgb(54, 54, 54);">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
+                style="background-color: #EFF7FB;">
+                Customer-centricity
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                We put our clients at the center of everything we do and focus on <br> providing solutions that cater to
+                their unique business needs and <br>requirements.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: #EFF7FB; color: rgb(54, 54, 54);">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"
+                style="background-color: #EFF7FB;">
+                Integrity
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                We conduct our business with the highest levels of honesty, ethics, and <br>professionalism, and strive
+                to
+                build long-lasting relationships with our <br>clients based on trust and mutual respect
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item" style="background-color: #EFF7FB; color: rgb(54, 54, 54);">
+            <h2 class="accordion-header" id="flush-headingFive">
+              <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"
+                style="background-color: #EFF7FB;">
+                Teamwork
+              </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                We believe in the power of collaboration and teamwork, and work <br> together with our clients to
+                achieve
+                common goals and objectives.
+              </div>
+            </div>
+          </div>
+          <div class="my-5"></div>
+          <div class="d-block d-md-flex justify-content-md-start">
+            <div class="w-100 text-center d-md-none">
+              <button class="about-btn m-3">Ask a Question</button>
+            </div>
+            <div class="d-none d-md-block">
+              <button class="about-btn m-3">Ask a Question</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Image -->
+      <div class="col-md-5 d-flex align-items-center justify-content-center" style="background-color: #eff7fb;">
+        <img src="ss.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="iFaST Image">
+      </div>
+    </div>
+  </div>
+
+  <div class="py-5"></div>
+  <section id="services" class="my-5 pt-5">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="fw-bold mb-3" style="color: #1C0D5A;">What We Do</h2>
+        <p class="text-muted mx-auto pt-2" style="max-width: 700px;">
+          We specialize in delivering high-quality IT solutions and services that cater to <br>the unique business needs
+          of our valued clients, while maintaining the highest <br>standards of excellence in the industry.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="my-5">
+    <div class="container">
+      <div class="row gx-0"> <!-- gx-0 removes horizontal space between columns -->
+
+        <!-- Repeat this column 9 times -->
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fas fa-code fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Software Development</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fas fa-mobile-screen-button fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">App Development</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fas fa-cloud fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Cloud Computing</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fa-regular fa-file fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">ERP</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fas fa-database fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Data Science</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fa-solid fa-chart-column fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Capacity Building</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Project Management</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fa-solid fa-spell-check fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Texting & Validation Services</h5>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="border d-flex flex-column align-items-center justify-content-center"
+            style="width: 100%; height: 200px;">
+            <i class="fa-solid fa-globe fa-2x mb-2" style="color: #00b2ab;"></i><br>
+            <h5 class="fw-bold" style="color: #1f0d65;">Digitization</h5>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="width: 100%; height: 150px; background-color: #eff7fb;"></section>
+
+  <!-- 1st Carousel -->
+  <section class="container py-5 bg-white">
+   <div class="row">
+    <div class="col-12">
+       <h2 class="text-center mb-4 fw-bold" style="color: #1C0D5A;">Our Partnerships / Certifications</h2>
+    <div class="logo-carousel ">
+      <div><img class=" mt-md-5 pt-5" src="logo1.png" alt="Logo 1"></div>
+      <div><img src="logo2.png" alt="Logo 2"></div>
+      <div><img src="logo3.png" class="pt-5" alt="Logo 3"></div>
+      <div><img src="logo4.png" alt="Logo 4"></div>
+      <div><img src="logo5.png" alt="Logo 5"></div>
+      <div><img src="logo6.png" alt="Logo 6"></div>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselLarge" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselLarge" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+      <span class="visually-hidden">Next</span>
+    </button> -->
+    </div>
+   </div>
+  </section>
+  <div class="my-5"></div>
+
+  <!-- Bootstrap Carousel for Logos from logo7.png to logo21.png -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+  <h2 class="text-center mb-4 fw-bold" style="color: #1F0D65;">Our Clients</h2>
+    <div class="logo-carousel-second ">
+      <img src="logo7.jpg" alt="Logo 7">
+      <img src="logo8.png" alt="Logo 8">
+      <img src="logo9.jpeg" alt="Logo 9">
+      <img class="position-relative top-lg-100 pt-5 mt-3" src="logo10.jpg " alt="Logo 10">
+      <img src="logo11.jpg" alt="Logo 11">
+      <img src="logo12.jpg" alt="Logo 12">
+      <img class="position-relative top-lg-100 pt-5 mt-3" src="logo13.png" alt="Logo 13">
+      <img src="log14.png" alt="Logo 14">
+      <img src="logo15.png" alt="Logo 15">
+      <img class="position-relative top-lg-100 pt-5 mt-3" src="logo16.png" alt="Logo 16">
+      <img class="position-relative top-lg-100 pt-5 mt-1" src="logo17.jpg" alt="Logo 17">
+      <img class="logo18" src="logo18.png" alt="Logo 18">
+      <img src="logo19.png" alt="Logo 19">
+      <img src="logo20.png" alt="Logo 20">
+      <img src="logo21.jpg" alt="Logo 21">
+    </div>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+
+
+  <!-- Arrows -->
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselLogos" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselLogos" data-bs-slide="next">
+    <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button> -->
+  </div>
+  <div class="my-5"></div>
+
+  <!-- Services 4th page -->
+  <section class="container-fluid py-5" style="background-color: #EFF7FB;">
+    <div class="row align-items-center">
+
+      <!-- Left Content -->
+      <div class="umer services-text col-lg-7 mb-4 mb-lg-0 text-lg-start text-center px-3 px-md-5">
+        <h3 class="fw-bold" style="color: #1F0D65;">
+          Empowering Business Growth with Innovative IT Solutions and Services from iFaST Solutions
+        </h3>
+        <div class="my-5"></div>
+        <p class="text-muted" style="font-size: 1rem; font-family: 'Roboto', sans-serif;">
+          At iFaST Solutions, we are committed to driving innovation and facilitation through the<br>
+          latest technologies. As an innovative IT services company, we pride ourselves on staying<br>
+          ahead of thecurve by introducing new ideas and methods that result in positive change<br>
+          and improvement for our clients. Our facilitation services are designed to streamline<br>
+          processes and improve efficiency, ensuring that our clients can focus on what matters<br>
+          most – growing their business. By leveraging the power of technology, weempower our<br>
+          clients to achieve their business goals and stay ahead of the competition. Trust iFaST<br>
+          Solutions to drive innovation and facilitation through technology and take your business<br>
+          to new heights.
+        </p>
+        <br><br>
+        <button class="about-btn btn-primary">Ask a Question</button>
+      </div>
+      <!-- Right Image -->
+      <div class="col-lg-5 text-center d-none d-lg-block">
+        <img class="bulb" src="bulb-logo.png" alt="About Image" class="img-fluid">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h3 class="fw-bold" style="color: #1F0D65;">Contact Us</h3>
+        <div class="py-2"></div>
+        <p class="text-muted">We would love to hear you.</p>
+      </div>
+
+      <div class="row text-center text-md-start">
+        <!-- Left Info Column -->
+        <div class="col-md-6 mb-4">
+          <h5 class="fw-bold" style="color: #1C0D5A; font-size: medium;">Peshawar Office</h5>
+          <p class="text-muted">
+            Plot No 2, Opposite Q Mall, Adjacent Street Tehkal Bala BRT Station,<br>
+            University Road, Peshawar, Khyber Pakhtunkhwa
+          </p>
+
+          <h5 class="fw-bold mt-4" style="color: #1C0D5A; font-size: medium;">Islamabad Office</h5>
+          <p class="text-muted"">
+            Office No 13, 2nd Floor, Select Center, F-11 Markaz, Islamabad<br><br>
+            +92-326-6660089<br>
+            info@ifastsolutions.com
+          </p>
+
+          <!-- Social Links -->
+          <div class=" mt-3">
+            <a href="https://www.linkedin.com" target="_blank" class="me-3 text-decoration-none text-dark fs-4">
+              <i class="fab fa-linkedin" style="color:#00b2ab;"></i>
+            </a>
+            <a href="mailto:info@ifastsolutions.com" class="text-decoration-none text-dark fs-4">
+              <i class="fa-regular fa-envelope" style="color:#00b2ab;"></i>
+            </a>
+        </div>
+      </div>
+
+      <!-- Right Map Column -->
+      <div class="col-md-6">
+        <iframe src="https://www.google.com/maps?q=F-11%20Markaz%20Islamabad&output=embed" width="100%" height="300"
+          style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  
+ <!-- Footer Section -->
+<footer class="pt-4 pb-5" style="background-color: #EFF7FB;">
+  <div class="footer container">
+    <div class=" footer-up-line row text-center text-lg-start px-3">
+
+      <!-- Left Column -->
+      <div class="col-lg-4 mb-3">
+        <p class="mb-1" style="color: #57575d;">+92-326-6660089</p>
+        <p class="mb-0" style="color: #57575d;">info@ifastsolutions.com</p>
+      </div>
+
+      <!-- Center Column - Navigation Links -->
+      <div class="col-lg-4 mb-3 fw-bold">
+        <nav>
+          <a href="#home" class="footer-link mx-2 text-decoration-none" style="color: #57575d;">Home</a>
+          <a href="#about" class="footer-link mx-2 text-decoration-none" style="color: #57575d;">About Us</a>
+          <a href="#services" class="footer-link mx-2 text-decoration-none" style="color: #57575d;">Services</a>
+          <a href="#contact" class="footer-link mx-2 text-decoration-none" style="color: #57575d;">Contact Us</a>
+        </nav>
+      </div>
+
+      <!-- Right Column - Icons -->
+      <div class="col-lg-4 mb-3">
+          <a href="https://www.linkedin.com" class="mx-2 fs-5" style="color: #57575d;"">
+            <i class="fab fa-linkedin"></i></a>
+        </a>
+        <a href="mailto:info@ifastsolutions.com" class="mx-2 fs-5" style="color: #57575d;">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="text-center pt-3 mt-3">
+      <small style="color: #57575d;">© 2025 iFaST Solutions</small>
+    </div>
+  </div>
+
+</footer>
+
+
+  
+
+
+
+
+
+
+  <script>
+  $(document).ready(function () {
+    // Auto-close offcanvas on nav-link click
+    $('.offcanvas a.nav-link').on('click', function () {
+      $('.offcanvas').offcanvas('hide');
+    });
+
+    // Your existing carousels
+    $('.logo-carousel').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+
+    $('.logo-carousel-second').slick({
+      slidesToShow: 7,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      infinite: true,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 5
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  </script>
+</body>
+
+</html>
